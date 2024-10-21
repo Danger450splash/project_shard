@@ -1,6 +1,4 @@
 
-# This is the main production level
-
 import systemA
 
 class shopInvoker:
