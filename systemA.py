@@ -1,5 +1,5 @@
 
-# This is for testing only
+# This is for feature branch
 
 from abc import ABC, abstractmethod
 
@@ -34,7 +34,7 @@ class shop(abstractSpawn):
 
     def permit(self) -> None:
         self.__num: int = 1
-        print(f'Hello World, this is a brand new testing feature, {self.__num}')
+        print(f'Hello World, this is for feature branch, {self.__num}')
 
     def loopPattern(self) -> None:
         self.user = int(input(f'Enter the number of stars you want: '))
