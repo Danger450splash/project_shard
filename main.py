@@ -1,5 +1,5 @@
 
-# This is branch is for the Feature Branch. This must go through testing before Production Level.
+# This branch is for the Feature Branch. This must go through testing before Production Level.
 
 import systemA
 
