@@ -6,6 +6,10 @@ from abc import ABC, abstractmethod
 class abstractSpawn(ABC):
 
     @abstractmethod
+    def ground(self) -> None:
+        pass
+
+    @abstractmethod
     def permit(self) -> None:
         pass
 
@@ -18,11 +22,15 @@ class shop(abstractSpawn):
     def __init__(self) -> None:
         self.__manager()
         self.permit()
+        self.ground()
 
         self.__value: int = self.__cashier(20)
         print(self.__value)
         self.loopPattern()
         self.replayClass()
+
+    def ground(self) -> None:
+        print(f'Ground Method')
 
     def permit(self) -> None:
         self.__num: int = 1
